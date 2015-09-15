@@ -11,14 +11,3 @@ export default DS.Model.extend({
 	events: DS.hasMany('event', {async: true}),
 	opportunities: DS.hasMany('opportunity', {async: true})
 });
-
-
- //  name: (i)=> faker.company.companyName + ' ' + i,
- //  size: potenial_sizes.objectAt(Math.floor(Math.random() * potenial_sizes.length)),
- //  about: faker.lorem.paragraphs(4),
- //  hq: faker.address.country,
- //  countries: faker.random.number,
- //  revenue: faker.random.number,
- //  logo_image: faker.image.avatar,
-	// cover_image: '/images/cover.jpg',
-	// events: []
