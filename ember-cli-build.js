@@ -11,7 +11,6 @@ module.exports = function(defaults) {
 
   app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js');
   app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js');
-  app.import('bower_components/jquery-backstretch/jquery.backstretch.min.js');
   app.import('bower_components/bootstrap-select/dist/js/bootstrap-select.min.js');
   
   //
