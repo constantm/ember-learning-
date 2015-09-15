@@ -1,0 +1,208 @@
+.icon-three-year-bachelors-degree:before, .icon-three-year-bachelor-s-degree:before {
+	@extend .icon-3year:before;
+}
+.icon-four-year-bachelors-degree:before, .icon-four-year-bachelor-s-degree:before {
+	@extend .icon-4year:before;
+}
+.icon-university-tuition-fees:before {
+	@extend .icon-academic-institution:before;
+}
+.icon-civilian-clothing-allowance:before {
+	@extend .icon-clothing-allowance:before;
+}
+.icon-boarders-settling-in-pack-if-applicable:before {
+	@extend .icon-boarding-settling-in:before;
+}
+.icon-stationery-allowance:before {
+	@extend .icon-edit-pen-7:before;
+}
+.icon-travel-allowance-conditions-apply:before {
+	@extend .icon-travel-allowance:before;
+}
+.icon-wellness-initiatives:before {
+	@extend .icon-heart-pulse:before;
+}
+.icon-coaching:before {
+	@extend .icon-diamond:before;
+}
+.icon-study-support-financial:before {
+	@extend .icon-some-extra-cash:before;
+}
+.icon-life-cover:before {
+	@extend .icon-umbrella:before;
+}
+.icon-study-leave:before {
+	@extend .icon-prescribed-book-allowance:before;
+}
+.icon-international-exchange-secondment-opportunity:before {
+	@extend .icon-international-exchange-secondment-opportunities:before;
+}
+.icon-national-exchange-secondment-opportunity:before {
+	@extend .icon-plane:before;
+}
+.icon-certificate-programme:before {
+	@extend .icon-matric-cert:before;
+}
+.icon-bachelors-four-year-degree:before, .icon-bachelor-s-four-year-degree:before {
+	@extend .icon-ba:before;
+}
+.icon-masters-degree:before {
+	@extend .icon-ma:before;
+}
+.icon-doctoral-degree-phd:before {
+	@extend .icon-phd:before;
+}
+.icon-honours-degree:before {
+	@extend .icon-honors:before;
+}
+.icon-health-retirement-plans:before {
+	@extend .icon-health-and-retirement-plans:before;
+}
+.icon-paid-leave-vacation-holidays:before {
+	@extend .icon-paid-leave-for-vacation-public-holidays:before;
+}
+.icon-financial-rewards-for-performance:before {
+	@extend .icon-financial-rewards-for-team-and-individual-performances:before;
+}
+.icon-special-paid-leave:before {
+	@extend .icon-special-paid-leave-for-moving-getting-married-etc:before;
+}
+.icon-company-car-scheme:before {
+	@extend .icon-travel-allowance:before;
+}
+.icon-corporate-credit-card:before {
+	@extend .icon-credit-card:before;
+}
+.icon-free-or-subsidised-mobile-phone:before {
+	@extend .icon-phone:before;
+}
+.icon-global-induction:before {
+	@extend .icon-globe:before;
+}
+.icon-laptop-tablet:before, .icon-laptop-tablet-subsidy:before {
+	@extend .icon-laptop-2:before;
+}
+.icon-paid-overtime:before {
+	@extend .icon-moon-sleep:before;
+}
+.icon-pension-scheme:before {
+	@extend .icon-health-and-retirement-plans:before;
+}
+.icon-private-healthcare:before {
+	@extend .icon-medical-aid:before;
+}
+.icon-relocation-package-non-monetary:before {
+	@extend .icon-fork-knife:before;
+}
+.icon-relocation-package:before {
+	@extend .icon-briefcase-trolley:before;
+}
+.icon-salary-packaging:before {
+	@extend .icon-balance-law:before;
+}
+.icon-share-options-or-schemes:before {
+	@extend .icon-analytics-chart-graph:before;
+}
+.icon-staff-discounts:before {
+	@extend .icon-percentage-sign-1:before;
+}
+.icon-study-leave-or-sponsorship:before {
+	@extend .icon-graduate-development:before;
+}
+.icon-subsidised-sports-leisure-facilities:before {
+	@extend .icon-sport-facilities:before;
+}
+.icon-training-for-professional-qualification:before {
+	@extend .icon-structured-training:before;
+}
+.icon-bursary:before {
+	@extend .icon-some-extra-cash:before;
+}
+.icon-sign-on-bonus:before {
+	@extend .icon-like:before;
+}
+.icon-gear:before {
+	@extend .icon-gear-setting-3:before;
+}
+.icon-religious-spiritual-facilities:before {
+	@extend .icon-sound:before;
+}
+.icon-subsidised-canteen-services:before {
+	@extend .icon-food:before;
+}
+
+// size overrides
+
+.icon-certificate-programme, .icon-undergrad {
+	line-height: 64px !important;
+	// font-size: 56px !important;
+}
+
+#_opportunitieslist_tabs {
+	.icon-national-exchange-secondment-opportunity {
+		font-size:35px !important;
+	}
+	.icon-coaching {
+		font-size: 38px !important;
+	}
+	.icon-mentorship {
+		font-size: 40px !important;
+	}
+	.icon-study-support-financial {
+		font-size: 36px !important;
+	}
+	.icon-life-cover {
+		font-size: 36px !important;
+	}
+	.icon-study-leave {
+		font-size: 35px !important;
+	}
+	.icon-medical-aid {
+		font-size: 38px !important;
+	}
+	.icon-company-car-scheme {
+		font-size: 37px !important;
+	}
+	.icon-corporate-credit-card {
+		font-size: 37px !important;
+	}
+	.icon-laptop-tablet, .icon-laptop-tablet-subsidy {
+		font-size: 35px !important;
+	}
+	.icon-relocation-package-non-monetary {
+		font-size: 33px !important;
+		top: 4px !important;
+		position: relative !important;
+	}
+	.icon-relocation-package {
+		font-size: 34px !important;
+		position: relative !important;
+		top: 4px !important;
+	}
+	.icon-salary-packaging {
+		font-size: 35px !important;
+	}
+	.icon-share-options-or-schemes {
+		font-size: 31px !important;
+		position: relative !important;
+		top: 3px !important;
+	}
+	.icon-staff-discounts {
+		font-size: 38px !important;
+	}
+	.icon-wellness-initiatives {
+		font-size: 35px !important;
+		position: relative !important;
+		top: 3px !important;
+	}
+	.icon-religious-spiritual-facilities {
+		font-size: 32px !important;
+		position: relative !important;
+		top: 3px !important;
+	}
+	.icon-subsidised-canteen-services {
+		font-size: 34px !important;
+		position: relative !important;
+		top: 2px !important;
+	}
+}

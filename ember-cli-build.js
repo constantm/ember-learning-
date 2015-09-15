@@ -8,6 +8,12 @@ module.exports = function(defaults) {
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
+
+  app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js');
+  app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js');
+  app.import('bower_components/jquery-backstretch/jquery.backstretch.min.js');
+  app.import('bower_components/bootstrap-select/dist/js/bootstrap-select.min.js');
+  
   //
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That

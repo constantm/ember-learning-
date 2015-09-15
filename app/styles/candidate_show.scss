@@ -1,0 +1,519 @@
+body.candidates_show {
+	.popover {
+		ul {
+			padding-top: 0;
+			margin:0 0 8px 0;
+			li:before {
+				content: "P";
+				font-family: "untitled-font-1";
+				display: inline-block;
+				width: 10px;
+				margin-left: -19px;
+				margin-right: 7px;
+				position: relative;
+				top: 2px;
+			}
+			li {
+				text-transform: none;
+				font-weight: normal;
+				font-size:13px;
+				padding-bottom: 10px;
+				padding-left: 1.4em;
+			}
+		}
+
+		.btn {
+			margin-left: 1.4em;
+		}
+	}
+
+	.bx-controls-direction {
+		.bx-prev {
+			margin-left: -50px;
+		}
+		.bx-next {
+			margin-right: -50px;
+		}
+	}
+
+	.tooltipster-content {
+		// urgh, had to override an !important from tooltipster.scss
+		padding-left: 10px !important;
+	}
+}
+
+#profile_pic_handwriting_svg_wrap {
+	width: 300px;
+	position: absolute;
+	left: 97%;
+	top: -14%;
+	visibility:hidden;
+}
+
+#opp_search_handwriting_svg_wrap {
+	width:235px;
+	visibility:hidden;
+}
+
+body.candidates_show #app-header {
+	background: $gray;
+	height: 280px;
+	.navbar-default {
+		height: 195px;
+		// background-color:$gray;
+		// background:url(/public/images/candidate_header.jpg);
+		// background-size:cover;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		height: 8em;
+		.navbar-default {
+			height: 4em;
+		}
+	}
+}
+
+#user_logo {
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	@media (max-width: $screen-xs-max) {
+		margin-top: 0;
+	}
+	@extend #company_logo;
+	#user_logo_wrap {
+		@extend #logo_wrap;
+		img {
+			width:100%;
+			height:100%;
+			margin-top: 0;
+		}
+		#user_logo_change_button {
+			position: absolute;
+			top: 71px;
+			margin-left: -55px;
+			left: 50%;
+		}
+	}
+}
+
+#candidate, #candidate_education, #candidate_footer {
+	.social-media-bar {
+		a {
+			div {
+				border:none;
+				background:$gray;
+			}
+		}
+		a[href$='#'] {
+			div {
+				background:$light-gray;
+			}
+			text-decoration: none;
+			pointer-events: none;
+		}
+		a[href$='#']:hover {
+			opacity: 1;
+		}
+	}
+	#unlock_button {
+		margin-bottom: 1em;
+	}
+	h1 {
+		color:$brand-primary;
+		font-size: 24px;
+		font-weight: bold;
+
+		@media (max-width: $screen-xs-max) {
+			margin-top: 0;
+		}
+	}
+	h2 {
+		font-size:30px;
+		text-align:center;
+		font-weight: 600;
+		text-transform:uppercase;
+		margin:20px 0 42px 0;
+		small {
+			display:block;
+			font-weight: 200;
+			text-transform:none;
+			font-size:18px;
+		}
+
+		@media (max-width: $screen-xs-max) {
+			margin-top: 0;
+			margin-bottom: 0.7em;
+		}
+	}
+	.well {
+		background-color: #f5f5f5;
+		padding: 19px;
+	}
+
+	.summary {
+		@media(min-width: $screen-sm-min) {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+			-moz-column-count: 2; /* Firefox */
+			column-count: 2;
+		}
+		color:$light-gray;
+		line-height:20px;
+		font-size:12px;
+
+		@media (min-width: $screen-sm-min) {
+			margin-bottom:15px;
+		}
+
+		.first {
+			padding-right:15px;
+		}
+		.last {
+			padding-left:15px;
+		}
+		.readmore-js-toggle {
+			text-align: center;
+			text-decoration: none;
+		}
+	}
+
+	.work_experience {
+		margin-top:-20px;
+		.company_logo_wrap {
+			border:1px solid $very_light_gray;
+			border-radius: 50%;
+			overflow:hidden;
+			padding:5px;
+			margin:0;
+			margin-top:30px;
+
+			@media (max-width: $screen-xs-max) {
+				margin: 1.5em auto;
+				max-width: 160px;
+				width: 50%;
+			}
+
+			img {
+				width:100%;
+			}
+		}
+		.label-wrap {
+			padding: 8px 0;
+
+			.label {
+				font-size: 0.85em;
+				border-radius: 20px;
+				padding: 6px 10px;
+				i {
+					vertical-align: bottom;
+					font-size: 13px;
+					margin: 0 3px 0 0;
+					display: inline-block;
+				}
+			}
+			.label-default {
+				opacity:0.4;
+			}
+		}
+		.grey_heading {
+			color:lighten($light-gray,15%);
+			font-weight:200;
+		}
+		.position {
+			color:$brand-primary;
+			font-family: "Lato";
+			font-size:20px;
+			margin:0 0 25px -1px;
+
+			@media (max-width: $screen-xs-max) {
+				margin-bottom: 1em;
+			}
+		}
+		.duration {
+			margin-top: 0;
+			margin-bottom:0px;
+			color:darken($light-gray, 10%);
+
+			// @media (max-width: $screen-xs-max) {
+			// 	width: 110%;
+			// }
+		}
+		.company_name {
+			margin-top:9px;
+		}
+		.border-left {
+			padding-top: 1em;
+
+			@media (max-width: $screen-xs-max) {
+				text-align: center;
+			}
+
+			@media (min-width: $screen-sm-min) {
+				padding-top:40px;
+				padding-left:40px;
+				min-height: 270px;
+				border-left:1px solid $very-light-gray;
+			}
+		}
+		.bx-wrapper {
+			margin-bottom:0;
+			.bx-pager {
+				bottom:10px;
+				.bx-pager-item {
+					.bx-pager-link {
+						background:$light_gray;
+					}
+					.bx-pager-link.active {
+						background:$gray;
+					}
+				}
+			}
+
+			.bx-viewport {
+				@media (max-width: $screen-xs-max) {
+					left: 0;
+				}
+			}
+		}
+	}
+	.bullet_list {
+		margin-top: 10px;
+
+		@media (min-width: $screen-sm-min) {
+			margin-bottom:40px;
+		}
+
+		>* {
+			padding-left:0;
+			margin:0 0 8px 0;
+
+			@media (max-width: $screen-xs-max) {
+				text-align: left;
+			}
+		}
+
+		i {
+			color:lighten($light-gray,15%);
+			border: 1px solid lighten($light-gray,15%);
+			border-radius: 50%;
+			padding:4px 5px 5px 5px;
+			height:25px;
+			margin-right:0;
+		}
+		.point {
+			font-weight:normal;
+			color:darken($light-gray, 10%);;
+		}
+	}
+	.qualification {
+		margin-top: 20px;
+		.institution_logo_wrap {
+			background:#fff;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-bottom: 40px;
+			border: 4px solid $very-light-gray;
+			border-radius: 50%;
+			overflow: hidden;
+			height: 100px;
+			width: 100px;
+			padding:0 5px;
+			img {
+				width: 119%;
+				max-width: 119%;
+				margin-left: -7px;
+				margin-top: -3px;
+			}
+		}
+		.qualification-icon {
+			text-align: center;
+
+			i {
+				font-size: 140px;
+				height: 108px;
+				display: block;
+				@media (min-width: $screen-sm-min) {
+					margin-left:6px;
+				}
+			}
+		}
+
+		h4 {
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 14px;
+			color:$light-gray;
+			margin-top:-10px;
+		}
+
+		.degree_process {
+
+			margin: 0 auto;
+			.display_percentage {
+				font-family: "Lato";
+			top: -80px;
+			position: relative;
+			font-size: 18px;
+
+			}
+			.complete_text {
+				font-family: "Lato";
+			position: relative;
+			top: -85px;
+			font-size: 11px;
+			text-transform: lowercase;
+			color:$light-gray;
+
+			}
+			// .circle-text {
+			// 	font-family: "Lato";
+			// }
+			// .circle-info {
+			// 	font-family: "Lato";
+			// }
+		}
+	}
+	#footer_tags {
+		margin-top:-20px;
+
+		> div:nth-child(1) {
+			@media (max-width: $screen-sm-max) {
+				border-left:1px solid $very-light-gray;
+			}
+		}
+
+		h4 {
+			text-align: center;
+			// text-transform: uppercase;
+			font-weight: bold;
+			font-size: 16px;
+			color:$gray;
+			// margin-top:-10px;
+			margin: 1em 2em;
+
+			@media (min-width: $screen-sm-min) {
+				margin:40px 0 30px 0;
+			}
+		}
+
+		h4.text-left-sm {
+			@media (max-width: $screen-sm-max) {
+				text-align: left;
+				margin-left: 4%;
+			}
+		}
+
+		.border-right {
+			@media (min-width: $screen-md-min) {
+				border-right:1px solid $very-light-gray;
+			}
+		}
+		.tags {
+			padding:0 20px;
+			margin-top: 0;
+			text-align: center;
+
+			@media (max-width: $screen-xs-max) {
+				margin-bottom: 1em;
+			}
+
+			.label {
+				background:$light-gray;
+			}
+		}
+		.bullet_list {
+			padding:0 20px;
+		}
+	}
+}
+#candidate {
+	margin-top: 5em;
+
+	@media (min-width: $screen-sm-min) {
+		margin-top:100px;
+	}
+
+	.bx-controls {
+		@media (max-width: $screen-xs-max) {
+			padding-top: 2em;
+		}
+	}
+}
+#candidate_education {
+	background:lighten($very-light-gray, 3.5%);
+
+	@media (min-width: $screen-sm-min) {
+		padding-bottom:30px;
+	}
+
+	h2 {
+		@media (min-width: $screen-sm-min) {
+			margin-top: 40px;
+		}
+	}
+
+	.bx-wrapper {
+		@media (max-width: $screen-xs-max) {
+			margin-bottom: 0;
+		}
+	}
+
+	.bx-viewport {
+		@media (max-width: $screen-xs-max) {
+			left: 0;
+		}
+
+		ul {
+			li {
+				@media (max-width: $screen-xs-max) {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+#work_experiences {
+	li {
+		padding-left: 0;
+	}
+}
+
+.line_left {
+	width: 80px;
+	height: 1px;
+	background: $light-gray;
+	left: -110px;
+	position: absolute;
+}
+.line_right {
+	width: 80px;
+	height: 1px;
+	background: $light-gray;
+	right: -109px;
+	top:4px;
+	position: absolute;
+}
+
+#educations {
+	li {
+		padding-left: 0;
+
+		.row.qualification {
+			margin-top: 0;
+		}
+	}
+}
+
+.bx-wrapper {
+	.bx-pager {
+		padding-top: 0;
+
+		@media (max-width: $screen-xs-max) {
+			position: inherit;
+			bottom: 0;
+			padding-bottom: 1em;
+		}
+	}
+}

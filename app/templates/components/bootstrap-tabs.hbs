@@ -1,0 +1,17 @@
+<b>WEEEE</b>
+<ul class="nav nav-tabs nav-justified">
+	{{#each children as |child|}}
+	  <li>
+	  	<a href="#tab-{{child.tabUrl}}" {{action 'showTab' child.tabUrl}}>
+	  		{{child.name}}
+		  </a>
+		</li>
+	{{/each}}
+</ul>
+<div class="tab-content">
+	{{#each children as |child|}}
+		<div role="tabpanel" class="tab-pane {{if isUrgent 'active'}}" id="{{child.tabUrl}}">
+			{{yield}}
+		</div>
+	{{/each}}
+</div>

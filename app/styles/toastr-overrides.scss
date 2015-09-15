@@ -1,0 +1,37 @@
+// styles go here!
+#toast-container {
+  > div {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 0.9;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    filter: alpha(opacity=90);
+  }
+}
+#toast-container > :hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.toast-top-center {
+  top: 1em;
+  right: 0;
+  width: 100%;
+}
+.toast-message a {
+  text-decoration: underline;
+}
+.toast-message a:hover {
+  color: #cccccc;
+  text-decoration: underline;
+}
+#toast-container.toast-top-center > div {
+  margin: 0 auto 1em auto;
+}
+.toast-success {
+  background-color: #49ba79;
+}
+.toast-error {
+  background-color: #cf4a4a;
+}

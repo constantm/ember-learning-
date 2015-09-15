@@ -1,0 +1,54 @@
+// FOOTER
+
+#featured_companies {
+	@media (min-width: $screen-sm-min) {
+		// margin-top: 100px;
+	}
+	background:#4f4f4f;
+	padding:0 0 10px 0;
+	img {
+		width:100%;
+		margin-bottom: 0;
+	}
+	h2, h3 {
+		margin: 45px 0 23px 0;
+		font-weight: 100;
+		font-size: 24px;
+		text-align: center;
+		color:#fff;
+	}
+}
+
+#footer {
+	clear: both;
+	margin-top:0;
+	background:#222222;
+	padding:15px 0;
+
+	a.social_link, a.social_link:hover {
+		text-decoration: none;
+    display: inline-block;
+    opacity:0.8;
+    width: 22px;
+    height: 22px;
+    background: #4f4f4f;
+    border-radius: 50%;
+    position: relative;
+    margin: 0;
+    top: 0;
+    color: #FFF;
+    margin: 0 0 0 5px;
+    i{
+	    font-size: 15px;
+	    position: relative;
+	    left: 0px;
+	    top: 3px;
+    }
+	}
+	a.social_link:hover {
+		opacity:1;
+	}
+	h4 {
+		color:#fff;
+	}
+}

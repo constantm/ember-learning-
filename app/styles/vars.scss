@@ -1,0 +1,33 @@
+$brand-primary: #ea4d17;
+$brand-success: #49ba79;
+$input-border-focus: $brand-primary;
+$gray: #4c5053;
+// $gray: lighten($gray, 5%);
+$light-gray: #b3b3b3;
+$red: #cf4a4a;
+$green: #49ba79;
+// $light-gray: lighten($light-gray, 10%);
+$very-light-gray:#f0f0f0;
+$grid-columns: 24;
+$grid-gutter-width: 15px;
+$padding-base-vertical:8px;
+$border-radius-base: 3px;
+
+
+$font-family-sans-serif:  "Lato", sans-serif;
+
+// $font-family-base: "Lato", sans-serif;
+// $font-family-base: "Lato";
+// $headings-font-family: "Lato", sans-serif;
+$headings-font-weight: 200;
+
+$input-bg-disabled: #fff;
+// .font_ptsans {font-family: 'PT Sans', sans-serif;}
+// .font_montserrat {}
+// .font_opensans {font-family: 'Lato', sans-serif; font-weight:600; text-transform: uppercase;}
+// .primary-color { color: $brand-primary }
+
+// .font_ptsans {}
+// .font_montserrat {}
+.font_montserrat, .font_opensans { font-family: $font-family-sans-serif }
+.primary-color { color: $brand-primary }

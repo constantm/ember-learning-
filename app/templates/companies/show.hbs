@@ -1,0 +1,46 @@
+<div class="container">
+  <div class='row' id='companies_show'>
+    <div class='col-xs-24 col-sm-14 col-md-16'>
+      <div class='row' id='profile_company_name'>
+        <div class='col-md-24'>
+          <h2>{{model.name}}</h2>
+        </div>
+      </div>
+      <div class='row' id='profile_company_industry'>
+        <div class='col-md-24'>
+        </div>
+      </div>
+      <div class='row' id='profile_company_country'>
+        <div class='col-md-24'></div>
+      </div>
+    </div>
+    <div class='col-xs-24 col-sm-offset-1 col-sm-9 col-md-7'>
+    </div>
+    <div class='col-xs-24 col-sm-14 col-md-16' id='profile_company_details'>
+      <p></p>
+    </div>
+    <div class='hidden-xs col-sm-offset-1 col-sm-9 col-md-7'>
+      <div id='upcoming'>
+        <h4 class='text-center'>
+          <i class='icon-calendar'></i>
+        </h4>
+        <h4 class='title text-center'>Up Next ({{model.events.length}})</h4>
+        <ul class="test"> 
+          <li>lol</li>
+          {{#each model.events as |event|}}
+            <li>{{event.name}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class='col-xs-24'>
+      <div class='row' id='company_stats'>
+        <div class='autofit-container'>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  {{outlet}}
+</div>

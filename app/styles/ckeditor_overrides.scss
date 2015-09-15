@@ -1,0 +1,20 @@
+.cke {
+	// string required form-control
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow:none !important;
+	overflow: hidden;
+	.cke_top {
+		background:none;
+		background-image:none;
+	}
+	.cke_toolgroup {
+		background: $very-light-gray;
+		a:hover {
+			background: darken($very-light-gray, 10%);
+		}
+	}
+	.cke_bottom {
+		display:none;
+	}
+}

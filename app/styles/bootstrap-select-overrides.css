@@ -1,0 +1,17 @@
+.bootstrap-select ul.dropdown-menu {
+	overflow-x: hidden !important;
+}
+.bootstrap-select ul.dropdown-menu li {
+	padding:0 !important;
+}
+.bootstrap-select ul.dropdown-menu li.divider {
+	padding:0 !important;
+	margin: 2px 0 !important;
+}
+
+.bootstrap-select ul.dropdown-menu li a { 
+	padding: 5px 8px !important;
+}
+.bootstrap-select .dropdown-menu {
+	padding:0 !important;
+}

@@ -1,0 +1,241 @@
+body.explore_candidates_index {
+    position: relative;
+    #opportunities_bar {
+        height: 70px;
+        margin-top: 10px;
+        background: #f0f0f0;
+        padding: 17px;
+        label {
+            padding: 7px;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: right;
+        }
+        #opportunity_picker {
+            @media (max-width: $screen-sm-max) {
+                margin-left: 100px;
+                top: -3em;
+                position: relative;
+            }
+        }
+        .bootstrap-select {
+            .dropdown-menu.open {
+                @media (max-width: $screen-xs-max) {
+                    right: 0;
+                }
+            }
+        }
+    }
+    #search-results {
+        margin-top: 10px;
+    }
+    #searchTabs {
+        // padding-top: 30px;
+        li {
+            padding-left: 0px;
+        }
+    }
+    .candidate {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid $light-gray;
+        .toggle-icons {
+            color: $gray;
+            text-align: right;
+            i.icon-unlock {
+                opacity: 0;
+                display: none;
+            }
+            i.icon-lock {
+                display: block;
+            }
+            i.icon-lock, i.icon-unlock {
+                // they need to sit on top of each other for animations to work
+                position: absolute;
+            }
+            .tip_locations_count, .tip_ratings {
+                margin: 20px 0;
+            }
+            // text-align: right;
+            .rating, .lock, .invite, .unlocked {
+                // float: right;
+                position: relative;
+                opacity: 0.5;
+                display: inline-block;
+                cursor: pointer;
+                width: 22px;
+                height: 22px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+                i.icon-letter-mail-1 {
+                    //Sent icon
+                    opacity: 0;
+                    display: none;
+                    color: $brand-primary;
+                }
+            }
+            .rating {
+                margin-left: 0;
+            }
+            .unlocked {
+                opacity: 1 !important;
+                i.icon-unlock {
+                    opacity: 1 !important;
+                    display: block !important;
+                    color: $brand-success;
+                }
+            }
+        }
+        .pull-left {
+            height: 92px;
+            margin-right: 20px;
+            @media (min-width: $screen-sm-min) {
+                margin-bottom: 20px;
+            }
+            .candidate-photo {
+                img {
+                    border: 3px solid $light-gray;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    width: 92px;
+                    height: 92px;
+                }
+            }
+            .university-logo {
+                position: relative;
+                top: -39px;
+                right: -39px;
+                img {
+                    background-color: white;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+        .candidate-qualification {
+            font-size: 1.1em;
+            color: $gray;
+            margin-bottom: 0;
+            font-weight: 200;
+        }
+        i {
+            font-size: 1.5em;
+        }
+        .big-icon {
+            i {
+                font-size: 1.4em;
+            }
+        }
+    }
+    .rated-1, .rated-2, .rated-3 {
+        #rate-1 {
+            opacity: 1 !important;
+            i {
+                color: $brand-primary;
+           
+            }
+        }
+    }
+    .rated-2, .rated-3 {
+        #rate-2 {
+            opacity: 1 !important;
+            i {
+                color: $brand-primary;
+           
+            }
+        }
+    }
+    .rated-3 {
+        #rate-3 {
+            opacity: 1 !important;
+            i {
+                color: $brand-primary;
+           
+            }
+        }
+    }
+
+    .invited {
+        .invite {
+            opacity: 1 !important;
+            display: block !important;
+            i.icon-letter-mail-1 {
+                //Sent icon
+                opacity: 1 !important;
+                display: block !important;
+            }
+            i.icon-letter-mail-2 {
+                opacity: 0 !important;
+                display: none !important;
+            }
+        }
+    }
+    .candidate-details {
+        color: $gray;
+        font-size: 0.9em;
+        top: -0.6em;
+        margin-left: -4px;
+        @media (max-width: $screen-xs-max) {
+            margin-right: -12.5%;
+            clear: both;
+        }
+        @media (min-width: $screen-sm-min) {
+            padding-left: 15px;
+            line-height: 2;
+        }
+        .detail {
+            display: inline-block;
+            margin-right: 15px;
+            margin-left: -5px;
+            i {
+                // float: left;
+                padding-left: 5px;
+                padding-right: 2px;
+                position: relative;
+                top: 0.2em;
+            }
+        }
+    }
+    // // this stuff relates to fixed positioning - not used for now
+    // .affix {
+    // 	position: fixed;
+    // 	top: 0;
+    // 	left: 70.833333%;
+    // 	width: inherit;
+    // }
+    // .affix-bottom {
+    // 	position: absolute;
+    // 	top: auto;
+    // 	bottom: 68px;
+    // 	width: inherit;
+    // }
+    .row {
+        h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: $gray;
+        }
+    }
+    .candidate:hover {
+        background: $very_light_gray;
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .tooltipster-base {
+        .tooltipster-content {
+            padding-left: 10px !important;
+            ul {
+                padding-left: 25px !important;
+                li {
+                    padding-left: 0;
+                    list-style: initial;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+body.static_pages_employers {
+
+	#app-header #opportunities_slider {
+		@media (min-width: $screen-sm-min) {
+			margin:170px 0;
+		}
+	}	
+}
+
+#company_demo_modal {
+	h2 {
+		text-transform: uppercase;
+	}
+	p {
+		text-align: left;
+		margin-left:8px;
+	}
+}
+
+#employers {
+	h3:last-child {
+		@media(max-width: $screen-sm-max) {
+			margin-bottom: 1em;
+		}
+	}
+}

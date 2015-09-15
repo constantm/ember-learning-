@@ -1,0 +1,11 @@
+body .bx-wrapper {
+	box-shadow:none;
+	border:none;
+	background:none;
+}
+.bx-wrapper .bx-loading {
+	background-image:none;
+}
+.bx-wrapper .bx-prev, .bx-wrapper .bx-next, .bx-wrapper .bx-controls-auto .bx-start, .bx-wrapper .bx-controls-auto .bx-stop {
+	background-image: url("/public/images/controls.png");
+}

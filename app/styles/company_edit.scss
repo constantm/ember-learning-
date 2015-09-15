@@ -1,0 +1,121 @@
+.delete_opportunity_modal {
+	i {
+		font-size:74px;
+		color:$red;
+	}
+	h4 {
+		width: 70%;
+		margin: 0px auto 30px auto;
+	}
+	.input-group {
+		width: 220px;
+		margin: 0 auto;
+	}
+}
+
+.tab-content {
+	min-height: 100%;
+}
+
+iframe.parsley-error {
+	border-color:$red !important;
+	border-width:2px !important;
+	border-bottom-left-radius:0 !important;
+	border-bottom-right-radius:0 !important;
+}
+
+body.companies_edit {
+	background: #f5f5f5;
+
+	#edit_company_wrap {
+		#at-a-glance {
+			background-color: $very-light-gray;
+			padding-top: 20px;
+		}
+	}
+
+	.invite_user_modal {
+		width:60%;
+		.user_opportunity_location_permissions {
+			.location {
+				font-size: 12px;
+				color:$gray;
+			}
+		}
+		.form-group {
+			margin-bottom: 15px;
+		}
+	}
+
+	#_opportunities_tab {
+		.opportunity_title_wrap {
+			margin: 4px 0;
+			display: block;	
+			.opportunity_title {
+				font-size:16px;
+			}
+		}
+	}
+
+	#dashboard_tab {
+		.tab-content {
+			padding:0;
+		}
+		h2 {
+			margin:5px 0 0 12px;
+		}
+		hr {
+			margin:20px 15px 45px 15px;
+		}
+		.select_wrap {
+			margin:0 15px 0 0;
+		}
+		.chart {
+			margin:0 0 50px 0;
+			text-align:left;
+			.axis-label {
+				display: inline;
+				position: relative;
+				top: -4px;
+				font-size: 12px;
+			}
+		}
+		.metrics_summary {
+			.wrap {
+				height: 120px;
+				padding: 34px 0;
+				margin: 0 15px;
+				background: #f0f0f0;
+				text-align: center;
+				.title {
+					color:$light-gray;
+					text-transform: lowercase;
+				}
+				.count {
+					font-size:24px;
+				}
+			}
+		}
+		.line-legend {
+			li {
+				color:$gray;
+				background:$very-light-gray;
+				display: inline-block;
+				font-size:11px;
+				padding:0;
+				margin:0 0 0 15px;
+				span.legend_colour {
+					height: 19px;
+					width: 7px;
+					display:block;
+					float:left;
+				}
+				span.legend_label {
+					display:block;
+					float:right;
+					padding:2px 6px;
+				}
+			}
+		}
+	}
+}

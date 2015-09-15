@@ -1,0 +1,104 @@
+
+
+#filter_bar {	
+	background: #f0f0f0;
+	#upcoming, #filters {
+		margin-top: 0;
+		padding: 10px;
+		i {
+			font-size: 20px;
+		}
+		.opportunity_name {
+			line-height: 15px;
+		}
+		ul {
+
+			li.upcoming {
+				padding-top: 20px;
+				border-top:1px solid $light_gray  !important;
+				border-bottom:0 !important;
+				>.row {
+					padding:5px 0;
+				}
+			}
+		}
+	}
+	#upcoming {
+		.title {
+			border-bottom:0;
+			padding-bottom: 10px;
+		}
+		.company_logo {
+			background: #fff;
+			border: 1px solid $light_gray;
+			border-radius: 50%;
+			width: 45px;
+			height: 45px;
+			overflow: hidden;
+
+			.logo_wrap {
+				background: #fff;
+				text-align: center;
+				margin: 3px 0 0 1px;
+				img {
+					width:150%;
+					height: 150%;
+					margin-left: -18px;
+					margin-top: -4px;
+					opacity:0.6;
+				}
+			}
+		}
+	}
+	#filters {
+		h4 {
+			padding-bottom: 0;
+		}
+
+		hr {
+			border-color: $light-gray;
+		}
+
+		button {
+			margin-bottom: 10px;
+		}
+
+		.dates-filter {
+			margin-bottom: 30px;
+
+			> div {
+				margin:0;
+
+				input {
+					@extend .form-control;
+					box-shadow: none;
+				}
+			}
+
+			#opportunity_search_opening_date, #opportunity_search_closing_date {
+				width: 100%;
+			}
+		}
+		label, span.nr_months {
+			font-size: 10px;
+			color:$light-gray;
+			text-align: center;
+			display: block;
+		}
+		.months_wrapper {
+			margin:0 0 10px 0;
+			span.nr_months {
+				
+			}
+		}
+		.opportunity_search_industry {
+			width:100%;
+		}
+	}
+}
+
+#candidate_search {
+	#filter_bar {
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,189 @@
+$headings-font-family: 'Lato'; $font-family-base: 'Lato';
+// // Core variables and mixins
+@import "vars";
+// @import "icon-font";
+// @import url(http://fonts.googleapis.com/css?family=Lato:300,700);
+
+.font_big {font-size:22px};
+.font_med2 {font-size:14px};
+.font_med {font-size:12px};
+.font_sml {font-size:10px};
+.font_lato {font-family: 'Lato' !important; font-weight:300 !important; }
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+// $screen-sm-max: 0;
+// $screen-xs-max: 0;
+// $screen-sm-min: 0;
+
+// @import "company_profile";
+// @import "candidate_show";
+
+b {
+	font-weight:700 !important;
+}
+
+[class*="col-md-"] {
+	float: left;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+
+	@extend .font_lato;
+	margin:0;padding:0;
+	
+	color:$gray;
+	font-weight:300;
+	font-size:12px;
+	table {
+		page-break-inside:avoid;
+		width:100%;
+		td,th {
+			@extend .font_lato;
+			vertical-align: middle;
+			padding:0;margin:0;
+		}
+	}
+	.profile_image {
+		
+		overflow:none;
+		img {
+			border-radius: 45px;
+			height:80px;
+			width:80px;
+		}
+	}
+	.candididate_name, .candidate_email, .candidate_id {
+		margin-bottom: 2px;
+	}
+	.candidate_name {
+		@extend .font_big;
+		@extend .font_lato;
+	}
+	.candidate_nationality {
+		@extend .font_med;
+		@extend .font_lato;
+	}
+	.candidate_summary {
+		margin:10px 0 0 0;
+		p {
+			margin: 0 0 5px 0;
+			@extend .font_lato;
+		}
+	}
+
+	#education, #experience, #therest {
+
+		margin-top:10px;
+
+		th {
+			background:$gray;
+			height:35px;
+			.table_list_heading {
+				@extend .font_med2;
+
+				color:#fff;
+				width:100%;
+				text-align:left;
+				padding: 0 0 0 12px;
+			}
+		}
+		th.blank {
+			background:none;
+		}
+		tr.qualification, tr.experience {
+			.date_wrap {
+					width:20%;
+			}
+			td {
+				height:35px;
+				.date {
+					@extend .table_list_item;
+				}
+				.name, .position {
+					@extend .table_list_item;
+					.majors {
+						display:inline-block;
+						@extend .font_sml;
+					}
+				}
+				.institution, .company {
+					@extend .table_list_item;
+				}
+				.institution_logo, .company_logo {
+					height: 35px;
+					width: 35px;
+					border-radius: 17.5px;
+					overflow:hidden;
+					margin: 0 0 0 auto; // right-align the image inside the cell
+					img {
+						// scale the (big) image to fit the container
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.responsibilities {
+		p {
+			margin: 0 0 5px 0;
+			color:lighten($gray, 15%);
+			@extend .font_sml;
+		}
+	}
+	.tag {
+		@extend .font_sml;
+		// background: $gray;
+		color:$gray;
+		border:1px solid $gray;
+		display: inline-block;
+		padding: 4px 6px 2px 6px;
+		border-radius: 15px;
+		margin: 0 0 5px 0;
+	}
+	#therest {
+		td {
+			vertical-align: top;
+		}
+		td.achievements {
+			.title {
+				vertical-align: middle;
+				.date {
+					float:right;
+				}
+				.name{
+					float:left;
+					font-weight:bold;
+				}
+			}	
+			.summary {
+				color:lighten($gray, 15%);
+				@extend .font_sml;
+			}
+			hr {
+				margin: 12px 0 12px 0;
+			}
+		}
+	}
+}
+
+hr {
+	margin: 6px 0 12px 0;
+	border:0;
+    border-top: 1px solid lighten($gray,60%);
+}
+.spacer {
+	height:8px;
+}
+.table_list_item {
+	@extend .font_med;
+}
+
+.text-right {
+	text-align:right;
+}
+.clearfix {
+	clear:both;
+	height:5px;
+}

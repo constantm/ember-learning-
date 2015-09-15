@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("/public/fonts/icons/2015-08-20.eot");
+  src:url("/public/fonts/icons/2015-08-20.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/icons/2015-08-20.woff") format("woff"),
+    url("/public/fonts/icons/2015-08-20.ttf") format("truetype"),
+    url("/public/fonts/icons/2015-08-20.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "f";
+}
+.icon-graduate-development:before {
+  content: "j";
+}
+.icon-small-to-medium-enterprise-sme:before {
+  content: "k";
+}
+.icon-mail-1:before {
+  content: "o";
+}
+.icon-other:before {
+  content: "p";
+}
+.icon-camera:before {
+  content: "q";
+}
+.icon-academic-institution:before {
+  content: "s";
+}
+.icon-non-profit-organisation-1:before {
+  content: "b";
+}
+.icon-earth-africa:before {
+  content: "u";
+}
+.icon-non-profit-organisation-2:before {
+  content: "y";
+}
+.icon-listed-company:before {
+  content: "x";
+}
+.icon-marker:before {
+  content: "C";
+}
+.icon-organisations:before {
+  content: "D";
+}
+.icon-apprenticeship:before {
+  content: "A";
+}
+.icon-apprenticeship-1:before {
+  content: "F";
+}
+.icon-some-extra-cash:before {
+  content: "G";
+}
+.icon-calendar:before {
+  content: "r";
+}
+.icon-fellowship:before {
+  content: "z";
+}
+.icon-paid-leave-for-vacation-public-holidays:before {
+  content: "c";
+}
+.icon-career-acceleration-1:before {
+  content: "a";
+}
+.icon-icon-internship-1:before {
+  content: "d";
+}
+.icon-fontawesome-webfont:before {
+  content: "l";
+}
+.icon-about-backend:before {
+  content: "t";
+}
+.icon-specifics-backend:before {
+  content: "w";
+}
+.icon-career-acceleration:before {
+  content: "n";
+}
+.icon-candidates-backend:before {
+  content: "B";
+}
+.icon-location-another-option:before {
+  content: "E";
+}
+.icon-cpy-page-revenue:before {
+  content: "H";
+}
+.icon-chart-line:before {
+  content: "H";
+}
+.icon-cpy-page-hq:before {
+  content: "v";
+}
+.icon-cpy-page-countries:before {
+  content: "K";
+}
+.icon-happy-volunteering:before {
+  content: "m";
+}
+.icon-search:before {
+  content: "g";
+}
+.icon-globe:before {
+  content: "L";
+}
+.icon-right-arrow-1-1:before {
+  content: "M";
+}
+.icon-right-arrow-2:before {
+  content: "N";
+}
+.icon-right-arrow-3:before {
+  content: "O";
+}
+.icon-right-arrow-4:before {
+  content: "P";
+}
+.icon-checkmark-1:before {
+  content: "R";
+}
+.icon-checkmark-2:before {
+  content: "S";
+}
+.icon-opportunities-1:before {
+  content: "T";
+}
+.icon-user-1:before {
+  content: "U";
+}
+.icon-user-3:before {
+  content: "V";
+}
+.icon-web-1:before {
+  content: "Z";
+}
+.icon-social-twitter:before {
+  content: "1";
+}
+.icon-social-youtube:before {
+  content: "2";
+}
+.icon-social-linkedin:before {
+  content: "3";
+}
+.icon-social-facebook:before {
+  content: "4";
+}
+.icon-facebook-alt:before {
+  content: "5";
+}
+.icon-cloud-upload-1:before {
+  content: "7";
+}
+.icon-close-button-4:before {
+  content: "8";
+}
+.icon-faplus3:before {
+  content: ",";
+}
+.icon-fafacebook:before {
+  content: "-";
+}
+.icon-falinkedin:before {
+  content: ".";
+}
+.icon-play-1:before {
+  content: "/";
+}
+.icon-delete-trash-3:before {
+  content: ">";
+}
+.icon-linear-medium-4-01:before {
+  content: ":";
+}
+.icon-chevron-big-1-01:before {
+  content: "?";
+}
+.icon-chevron-medium-1-01:before {
+  content: "@";
+}
+.icon-chevron-medium-circle-1-01:before {
+  content: "[";
+}
+.icon-chevron-big-circle-1-01:before {
+  content: "]";
+}
+.icon-rounded-big-circle-4-01:before {
+  content: "^";
+}
+.icon-analytics-chart-graph:before {
+  content: "_";
+}
+.icon-eye-view-1:before {
+  content: "`";
+}
+.icon-edit-pen-8:before {
+  content: "{";
+}
+.icon-medal-rank-star:before {
+  content: "h";
+}
+.icon-briefcase:before {
+  content: "h";
+}
+.icon-untitled-6:before {
+  content: ";";
+}
+.icon-ba:before {
+  content: "~";
+}
+.icon-city-1:before {
+  content: "\\";
+}
+.icon-community-development:before {
+  content: "\e000";
+}
+.icon-flexible-working-hours:before {
+  content: "\e001";
+}
+.icon-honors:before {
+  content: "\e002";
+}
+.icon-international-exchange-secondment-opportunities:before {
+  content: "\e003";
+}
+.icon-ma:before {
+  content: "\e004";
+}
+.icon-matric-cert:before {
+  content: "\e005";
+}
+.icon-medical-aid:before {
+  content: "\e006";
+}
+.icon-mentorship:before {
+  content: "\e007";
+}
+.icon-mobile-cellular-allowance:before {
+  content: "\e008";
+}
+.icon-financial-rewards-for-team-and-individual-performances:before {
+  content: "\e009";
+}
+.icon-structured-personal-development:before {
+  content: "\e00a";
+}
+.icon-undergrad:before {
+  content: "\e00b";
+}
+.icon-structured-training:before {
+  content: "\e00c";
+}
+.icon-sport-facilities:before {
+  content: "\e00d";
+}
+.icon-special-paid-leave-for-moving-getting-married-etc:before {
+  content: "\e00e";
+}
+.icon-health-and-retirement-plans:before {
+  content: "\e00f";
+}
+.icon-phd:before {
+  content: "\e010";
+}
+.icon-career-development-resources:before {
+  content: "\e011";
+}
+.icon-shop:before {
+  content: "\e012";
+}
+.icon-boarding-fees:before {
+  content: "|";
+}
+.icon-prescribed-book-allowance:before {
+  content: "\e015";
+}
+.icon-clothing-allowance:before {
+  content: "\e014";
+}
+.icon-boarding-settling-in:before {
+  content: "\e017";
+}
+.icon-extramural-allowance:before {
+  content: "\e01b";
+}
+.icon-medical-allowance:before {
+  content: "\e01d";
+}
+.icon-pocket-money:before {
+  content: "\e01e";
+}
+.icon-stationary-allowance:before {
+  content: "\e01f";
+}
+.icon-edit-pen-7:before {
+  content: "\e01f";
+}
+.icon-toiletry-allowance:before {
+  content: "\e016";
+}
+.icon-brush:before {
+  content: "\e013";
+}
+.icon-fontawesome-webfont-2:before {
+  content: "\e019";
+}
+.icon-badge-medal:before {
+  content: "\e01a";
+}
+.icon-medal:before {
+  content: "\e01c";
+}
+.icon-chevron-big-2-01:before {
+  content: "\e020";
+}
+.icon-chevron-big-3-01:before {
+  content: "\e021";
+}
+.icon-chevron-big-4-01:before {
+  content: "\e022";
+}
+.icon-more-users-1:before {
+  content: "\e023";
+}
+.icon-credit-card:before {
+  content: "\e024";
+}
+.icon-bookmark-star-favorite:before {
+  content: "\e025";
+}
+.icon-unlock:before {
+  content: "\e026";
+}
+.icon-lock:before {
+  content: "\e028";
+}
+.icon-email-inbox:before {
+  content: "\e029";
+}
+.icon-excel-table-1:before {
+  content: "\e02a";
+}
+.icon-text-document:before {
+  content: "\e02b";
+}
+.icon-close-off-1:before {
+  content: "\e02c";
+}
+.icon-check-14:before {
+  content: "\e02d";
+}
+.icon-ringing-alarm:before {
+  content: "\e02e";
+}
+.icon-laptop-2:before {
+  content: "\e02f";
+}
+.icon-percentage-sign-1:before {
+  content: "\e031";
+}
+.icon-balance-law:before {
+  content: "\e032";
+}
+.icon-moon-sleep:before {
+  content: "\e033";
+}
+.icon-briefcase-trolley:before {
+  content: "\e034";
+}
+.icon-fork-knife:before {
+  content: "\e035";
+}
+.icon-like:before {
+  content: "\e038";
+}
+.icon-chart-pie:before {
+  content: "\e030";
+}
+.icon-letter:before {
+  content: "i";
+}
+.icon-letter-mail-1:before {
+  content: "\e036";
+}
+.icon-letter-mail-2:before {
+  content: "\e037";
+}
+.icon-flyer-paper:before {
+  content: "\e039";
+}
+.icon-opportunities:before {
+  content: "\e03a";
+}
+.icon-filter-2:before {
+  content: "e";
+}
+.icon-cpy-page-employees:before {
+  content: "X";
+}
+.icon-more-users-4:before {
+  content: "X";
+}
+.icon-cogs:before {
+  content: "I";
+}
+.icon-icon-close-4:before {
+  content: "J";
+}
+.icon-check-15:before {
+  content: "Q";
+}
+.icon-check-5:before {
+  content: "W";
+}
+.icon-check-7:before {
+  content: "Y";
+}
+.icon-check-11:before {
+  content: "0";
+}
+.icon-gear-setting-3:before {
+  content: "6";
+}
+.icon-enter:before {
+  content: "9";
+}
+.icon-close-4:before {
+  content: "!";
+}
+.icon-close-6:before {
+  content: "\"";
+}
+.icon-linear-small-1-01:before {
+  content: "#";
+}
+.icon-rounded-medium-1-01:before {
+  content: "$";
+}
+.icon-chevron-medium-3-01:before {
+  content: "%";
+}
+.icon-squared-medium-1-01:before {
+  content: "&";
+}
+.icon-linear-medium-1-01:before {
+  content: "'";
+}
+.icon-arrow-left:before {
+  content: "(";
+}
+.icon-arrow-right:before {
+  content: ")";
+}
+.icon-bold:before {
+  content: "*";
+}
+.icon-attention-3:before {
+  content: "+";
+}
+.icon-wistia-logo:before {
+  content: "<";
+}
+.icon-heart-pulse:before {
+  content: "=";
+}
+.icon-diamond:before {
+  content: "\e027";
+}
+.icon-plane:before {
+  content: "}";
+}
+.icon-umbrella:before {
+  content: "\e03b";
+}
+.icon-infinity-loop:before {
+  content: "\e03c";
+}
+.icon-infinity:before {
+  content: "\e03d";
+}
+.icon-3year:before {
+  content: "\e03e";
+}
+.icon-4year:before {
+  content: "\e03f";
+}
+.icon-travel-allowance:before {
+  content: "\e040";
+}
+.icon-attention-2:before {
+  content: "\e018";
+}
+.icon-attention-4:before {
+  content: "\e041";
+}
+.icon-attention-1:before {
+  content: "\e042";
+}
+.icon-gplus:before {
+  content: "\e043";
+}
+.icon-google-plus:before {
+  content: "\e044";
+}
+.icon-pacman:before {
+  content: "\e045";
+}
+.icon-ghost-pacman:before {
+  content: "\e046";
+}
+.icon-sound:before {
+  content: "\e047";
+}
+.icon-food:before {
+  content: "\e048";
+}
+.icon-cloud-download-1:before {
+  content: "\e049";
+}
+.icon-download-3:before {
+  content: "\e04a";
+}

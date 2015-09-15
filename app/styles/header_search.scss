@@ -1,0 +1,145 @@
+// User disciplines and opportunity location search
+
+#header_search_form {
+    margin: 20px 0;
+    position: relative;
+    .input-group-addon {
+        background: none !important;
+        border: 0 !important;
+    }
+    .input-group {
+        min-width: 150px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        i {
+            font-size: 16px;
+            color: $very-light-gray;
+        }
+        .input-group-addon {
+            padding: 0 10px;
+            width: 20px;
+        }
+        .search_location {
+            font-weight: 300;
+            width: 150px;
+            height: 35px;
+            border: none;
+            background: none;
+            color: #fff;
+            padding-left: 0;
+            display: inline-block;
+            float: none;
+            box-shadow: none;
+        }
+        .search_location::-webkit-input-placeholder {
+            color: $very-light-gray;
+        }
+        .search_location::-moz-placeholder {
+            color: $very-light-gray;
+        }
+        /* firefox 19+ */
+        .search_location:-ms-input-placeholder {
+            color: $very-light-gray;
+        }
+        /* ie */
+        input.search_location:-moz-placeholder {
+            color: $very-light-gray;
+        }
+        .search_location:focus {
+            border: none;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+        }
+        #user_discipline_search {
+            width: 150px;
+            .ms-sel-ctn {
+                overflow: hidden;
+            }
+        }
+        .ms-ctn.form-control {
+            background: none;
+            border: none;
+            input {
+                background: none;
+                color: $very-light-gray;
+                font-weight: 300;
+                padding: 2px 0px !important;
+            }
+            input::-webkit-input-placeholder {
+                color: $very-light-gray;
+            }
+            input::-moz-placeholder {
+                color: $very-light-gray;
+            }
+            /* firefox 19+ */
+            input:-ms-input-placeholder {
+                color: $very-light-gray;
+            }
+            /* ie */
+            input:-moz-placeholder {
+                color: $very-light-gray;
+            }
+            .ms-sel-ctn {
+                .ms-sel-item {
+                    font-weight: 300;
+                    background: none;
+                    color: $very-light-gray;
+                    padding: 0;
+                    font-size: 14px;
+                    .ms-close-btn {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .ms-ctn-focus {
+            border: none;
+            box-shadow: none;
+        }
+    }
+    .popout-form {
+        display: none;
+        background: $light-gray;
+        padding: 15px;
+        margin-top: 1px;
+        position: absolute;
+        border-radius: 2px;
+        width: 280px;
+        z-index: 1000;
+        // border:1px solid $light-gray;
+        > .bootstrap-select {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+        .opportunity_search_discipline {
+            width: 203px;
+            top: -1px;
+        }
+    }
+    .active {
+        background: rgba(255, 255, 255, 0.4);
+        .search_location {
+            ::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: #fff;
+            }
+            :-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: #fff;
+                opacity: 1;
+            }
+            ::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #fff;
+                opacity: 1;
+            }
+            :-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: #fff;
+            }
+        }
+    }
+}

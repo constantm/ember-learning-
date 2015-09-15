@@ -1,0 +1,104 @@
+.navbar-brand img {
+	margin:0 0 0 20px;
+	height: 28px;
+	@media (min-width: $screen-sm-min) {
+		height:35px;
+	}
+}
+.container-fluid {
+	width:90% !important;
+}
+
+
+@media (min-width: $screen-sm-min) { 
+	.opportunity_search_location {
+		
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {  
+	#signin_modal {
+		padding:0;
+		background:#fff;
+		width:50% !important;
+		// padding:0 !important;
+		// overflow:hidden;
+		h2 {
+			color:$gray;
+		}
+		.remodal-close {
+			display:none;
+		}
+		ul.nav-tabs {
+			margin:15px 0 0 0;
+		// 	margin:0;
+		// 	li {
+		// 		background:#f4f4f4;
+		// 		border-radius: 0;
+		// 	}
+		// 	li.active{ 
+		// 		background:#4c5053;
+		// 	}
+		}
+	}
+	#company_demo_modal, #signup_modal, #signup_modal_search {
+		width:70% !important;
+		max-width:960px !important;
+	}
+	#company_signup_modal {
+		width:80% !important;	
+	}
+	.container-fluid {
+		width:100% !important;
+	}
+
+}
+
+// @media (max-width: $screen-xs-max) { 
+// 	// .remodal {
+// 	// 	max-width: 100%; 
+// 	// }
+// }
+
+// @media (min-width: $screen-sm-min) { 
+//    .remodal#signin_modal {
+// 		max-width: 50%; 
+// 	}
+// 	.remodal#signup_modal {
+// 		max-width: 70%; 	
+// 	}
+// 	// #signin_modal.remodal {
+// 	// 	max-width:60%;
+// 	// }
+// }
+
+// @media (min-width: $screen-md-min) { 
+// 	.remodal#signin_modal {
+// 		max-width: 50%; 
+// 	}
+// 	.remodal#signup_modal {
+// 		max-width: 70%; 	
+// 	}
+// 	// #signin_modal.remodal {
+// 	// 	max-width:40%;
+// 	// }
+// }
+
+// @media (min-width: $screen-lg-min) {
+//    	.remodal#signin_modal {
+// 		max-width: 50%; 
+// 	}
+// 	.remodal#signup_modal {
+// 		max-width: 70%; 	
+// 	}
+// 	// #signin_modal.remodal {
+// 	// 	max-width:40%;
+// 	// }
+//  }
+
+// @media (min-width: 1200px) {
+//     .container{
+//         max-width: 970px;
+//     }
+// }

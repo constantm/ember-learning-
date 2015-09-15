@@ -1,0 +1,17 @@
+.remodal-overlay {
+	background:rgba($gray,0.8);
+}
+.remodal {
+	color:$gray;
+	max-width: 700px;
+}
+.remodal#company_signup_modal {
+	max-width: 1000px;
+}
+a.remodal-close {
+	color:$gray;
+}
+a.remodal-close:hover {
+	text-decoration:none;
+	background:$gray;
+}

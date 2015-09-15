@@ -1,0 +1,372 @@
+// workaround for issue with iOS 8 scrolling
+@media (max-width: $screen-xs-max) {
+	.remodal-wrapper {
+		-webkit-overflow-scrolling: initial;
+	}
+}
+
+#company_signup_modal, #signin_modal, #signup_modal, #signup_modal_slides {
+	@media(max-width: $screen-xs-max) {
+		min-height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin-bottom: 0;
+		// workaround for issue with iOS 8 scrolling
+		-webkit-overflow-scrolling: initial;
+		transform: initial;
+		// end workaround
+		form {
+			min-height: 100%;
+		}
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.iti-mobile-select {
+			display: none;
+		}
+		#button-container {
+			position: absolute;
+			bottom: 50px;
+			left: 0;
+		}
+		.bx-viewport {
+			margin-bottom: 80px;
+		}
+	}
+
+	.ms-sel-item {
+		text-align: left;
+	}
+
+	.inline-tooltip {
+		margin-top: -10px;
+	}
+
+	#user_work_experience .inline-tooltip {
+		margin-top: 20px;
+	}
+
+	.signup_progress {
+		margin:22px 0 0 0;
+		width:100%;
+		text-align:center;
+	}
+
+	.flex-control-nav {
+		// height: 65px;
+		position: relative;
+	}
+
+	.flex-control-paging {
+		margin-bottom: 23px;
+	}
+
+	h1, h5 {
+		@extend .font_montserrat;
+		text-transform: uppercase;
+	}
+	i {
+		color:$gray;
+	}
+	h1, h5 {
+		margin-top:0;
+		margin-bottom: 0;
+		color:$gray;
+	}
+	.heading h5 {
+		margin-top: 0;
+		margin-bottom: 22px;
+		color:$light-gray;
+		> span {
+			font-weight: bold;
+		}
+	}
+
+	#new_opportunity .next {
+		margin-top:15px;
+		display: none;
+	}
+
+	#business-signup-steps {
+		border-bottom: 1px solid lighten($light-gray, 13%);
+
+		.slides > li {
+			border-top: 1px solid lighten($light-gray, 13%);
+		}
+		h5 {
+			font-weight: 400;
+			text-transform: none;
+		}
+		h3 {
+			@extend .h3_medium_gray;
+		}
+
+		#opportunities_select {
+
+			.opportunity_opportunity_type {
+				li {
+					padding-bottom: 20px;
+					a {
+						color:$gray;
+					}
+					a:hover {
+						text-decoration: none;
+						color:$brand-primary;
+						i {
+							color:$brand-primary;
+						}
+					}
+				}
+				.selected a {
+					text-decoration: none;
+						color:$brand-primary;
+						i {
+							color:$brand-primary;
+						}
+				}
+				label {
+					@extend .font_opensans;
+					text-transform: none;
+					font-weight: 400;
+					display:block;
+					font-size: 14px;
+					padding:7px 0 0 0;
+				}
+				.opportunity_type_selection {
+					.coming-soon {
+						a {
+							pointer-events: none;
+							cursor: default;
+							i, h5 {
+								// color: $light-gray !important;
+								opacity: 0.2;
+							}
+							h5::after {
+								content: "(Coming soon!)";
+								display: block;
+							}
+						}
+						a:focus {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+		.opportunity_opportunity_industries {
+			@extend .col-md-24;
+			@extend .col-xs-24;
+			margin-top: -10px;
+		}
+		#disciplines_select {
+			.ot_select {
+				width:60%;
+				margin: 0 auto;
+				.dropdown-menu {
+					bottom: 100% !important;
+					max-height: 128px !important;
+					top: auto !important;
+				}
+				.ms-trigger-ico {
+					-ms-transform: rotate(180deg); /* IE 9 */
+					-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+					transform: rotate(180deg);
+				}
+			}
+			.ot_tags {
+				width:80%;
+				margin: 0 auto;
+				min-height: 200px;
+				overflow:hidden;
+				-webkit-transition: all .8s ease;
+				-moz-transition: all .8s ease;
+				-ms-transition: all .8s ease;
+				-o-transition: all .8s ease;
+				transition: all .8s ease;
+				.ms-sel-item  {
+					margin:0px 6px 8px 0;
+					font-weight:200;
+					font-size:14px;
+					padding:6px 10px 8px;
+					border:0;
+				}
+				.ms-sel-item:hover {
+					border:0;
+				}
+			}
+		}
+
+		#business_type_select, .opportunity_type_selection {
+			h5 {
+				@extend .font_opensans;
+					text-transform: none;
+					font-weight: 400;
+					display:block;
+					font-size: 14px;
+					padding:7px 0 0 0;
+			}
+			a {
+				i {
+					height: 55px;
+					margin: 0;
+				}
+				h5 {
+					// margin-bottom: 30px;
+				}
+			}
+			> div {
+				height:120px;
+				cursor: pointer;
+				a:hover {
+					text-decoration: none;
+				}
+			}
+			.selected, .hover {
+				i, h5 {
+					color: $brand-primary;
+
+				}
+			}
+		}
+		.opportunity_qualification_min_selection {
+			.selected, .hover {
+				i, h5 {
+					color: $brand-primary;
+
+				}
+			}
+		}
+		#business_type_select .col-md-4 {
+			width:20% !important;
+		}
+
+		#opportunity_location {
+			// padding-top:40px;
+			// margin-bottom:10px;
+			// height: 275px;
+			h4 {
+				font-weight:normal;
+				color:$gray;
+			}
+			#opportunity_location_intake {
+				margin-top: 25px;
+			}
+		}
+
+		li#user_details {
+
+			ul.parsley-errors-list {
+				top: -30px !important;
+				z-index:9999;
+			}
+			.opportunity_company_user_email {
+				ul.parsley-errors-list {
+					li {
+						width:330px;
+						text-transform:none;
+					}
+				}
+			}
+			.opportunity_company_user_password {
+				ul.parsley-errors-list {
+					li.parsley-minlength {
+						width:370px;
+					}
+				}
+			}
+		}
+		li#opportunity_location {
+			#map-wrap {
+				transform: translate(0,0); //Webkit bugfix
+				overflow:hidden;
+				display:block;
+				border: 5px solid #fff;
+				border-radius:50%;
+				height:300px;
+				width:300px;
+				margin:0 auto 30px auto;
+			}
+			#map {
+				height:300px;
+				width:300px;
+				opacity: 0.3;
+				.leaflet-bottom {
+					display: none;
+				}
+			}
+		}
+	}
+
+
+	
+
+	.opportunity_qualification_min_selection {
+		a:hover {
+			text-decoration: none;
+		}
+		> div {
+			padding-bottom: 25px;
+			height: 170px;
+		}
+		i {
+			font-size: 76px;
+			// line-height: 75px;
+			height: 100px;
+  		display: block;
+		}
+		#masters-degree {
+			i {
+				font-size: 86px;
+				line-height: 102px;
+			}
+		}
+		.icon-three-year-bachelors-degree {
+			font-size:64px;
+		}
+		.icon-four-year-bachelors-degree {
+			font-size:64px;			
+
+		}
+		// #Certificate_Programme, #Undergrad {
+		// 	padding-top: 19px;
+		// }
+		// #bachelor-s-four-year-degree {
+		// 	padding-top: 9px;
+		// }
+		// #honours-degree {
+		// 	padding-top: 6px;
+		// 	h5 {
+		// 		margin-top: -8px;
+		// 	}
+		// }
+		// .icon-honours, .icon-masters, .icon-bachelors, .icon-doctorate {
+		// 	font-size: 80px;
+		// 	line-height: 55px;
+		// }
+		// .icon-matric, .icon-undergrad {
+		// 	font-size:60px;
+		// 	line-height: 87px;
+		// 	margin-top: -10px;
+		// }
+		// .icon-bachelors {
+		// 	margin:-8px 0 5px 0;
+		// }
+		// .icon-honors, .icon-masters {
+		// 	font-size:85px;
+		// }
+		// #Doctorate {
+		// 	padding-top: 8px;	
+		// }
+		// .icon-certificate-programme {
+		// 	display:block;
+		// 	margin: 11px 0;
+		// }
+		// .icon-honours {
+		// 	display: block;
+		// 	margin:11px 0;	
+		// }
+	}
+}

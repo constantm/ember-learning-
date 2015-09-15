@@ -1,0 +1,52 @@
+// green icon button styles:
+.tourtip {
+	//Tooltip will be on right side by default
+	opacity:0.9;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    top: -10px;
+    border-radius: 50%;
+    background: #fff;
+    height: 21px;
+    padding: 0;
+    margin: 0;
+    width: 19px;
+    cursor: pointer;
+    >* {
+	    color: #49ba78;
+	    font-size: 2em;
+	    padding: 0;
+	    line-height: 0;
+	    margin-top: -4px !important;
+	    margin-left: -4px !important;
+	    display: inline-block;
+    }
+}
+.tourtip:hover {
+	opacity:1;
+}
+.tourtip-left {
+	right:auto;
+	left: 10px;
+    top: -10px;
+}
+.tourtip-bottom {
+	top:auto;
+	bottom: 0px;	
+}
+
+// tooltip styles:
+.tourtip-tooltip-theme {
+	@extend .tooltipster-default;
+	background:$brand-success;
+	color:#fff;
+	border-radius: 30px;
+}
+
+// Tourtips specific styling
+#account_menu {
+	.tourtip {
+		left: 40px !important;
+	}
+}

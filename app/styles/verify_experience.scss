@@ -1,0 +1,63 @@
+#verify_experience {
+	margin-top: 4em;
+
+	.experience-details {
+		line-height: 2em;
+		font-size: 14px;
+	}
+
+	.label-wrap {
+		padding: 8px 0;
+
+		.label {
+			font-size: 0.85em;
+			border-radius: 20px;
+			padding: 6px 10px;
+			i {
+				vertical-align: bottom;
+				font-size: 13px;
+				margin: 0 3px 0 0;
+				display: inline-block;
+			}
+		}
+		.label-default {
+			opacity:0.4;
+		}
+		.label-pending {
+			background-color: $gray;
+		}
+	}
+}
+
+#candidates_verify_experience {
+	.remodal {
+		border-radius: 4px 4px 0 0;
+		padding: 0;
+		border: 0;
+
+		.heading {
+			h3 {
+				margin-top: 1.4em;
+				margin-bottom: 1.4em;
+				font-size: 27px;
+			}
+		}
+
+		.remodal-body {
+			background: white;
+			padding: 1.4em;
+			width: 100%;
+			display: inline-block !important;
+			font-size: 14px;
+
+			.label-adjust {
+				width: 87.5% !important;
+
+				@media(min-width: $screen-sm-min) {
+					width: 68.83333333% !important;
+					margin-left: 2%;
+				}
+			}
+		}
+	}
+}

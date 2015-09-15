@@ -1,0 +1,16 @@
+// .sa-error-container {
+// 	.cancel {
+// 		background: $light-gray;
+// 	}	
+// }
+// // 
+.sweet-alert button.cancel {
+	background: $light-gray !important;
+}
+.sweet-alert button.cancel:hover {
+	background: darken($light-gray, 5%) !important;
+}
+
+.sweet-alert { 
+	font-family: 'Lato', sans-serif;
+}

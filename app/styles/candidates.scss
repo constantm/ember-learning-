@@ -1,0 +1,892 @@
+.achievements_handwriting_svg_wrap {
+    text-align:center;
+    svg {
+        margin-right:-140px;
+        width:200px;
+    }
+}
+
+.user_user_work_experiences_responsibility_list {
+    .ms-res-ctn.dropdown-menu {
+        display:none;
+        visibility:hidden;
+    }
+}
+
+.parsley-error-fake {
+	@extend .parsley-error;
+}
+
+#user_summary_counter {
+    @extend .word-count;
+}
+
+.user_paid_user_work_experiences_responsibility_list, .user_skill_list, .user_other_qualification_list, .user_interest_list {
+    .ms-res-ctn.dropdown-menu {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.links {
+    margin: 20px 0;
+    text-align: center;
+}
+
+body.candidates_edit {
+    .popover-content ul li i {
+        opacity: 0;
+    }
+}
+
+.donut-chart-wrap {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    #donut_number {
+          position: absolute;
+          top: 20px;
+          width: 71px;
+          font-size: 24px;
+          text-align: center;
+          #number {
+              font-size:20px;
+              display:inline;
+          }
+          .percentage {
+              display: inline;
+              font-size: 11px;
+              margin-left: -5px;
+          }
+    }
+}
+
+.tipfixedleft-style {
+    @extend .tooltipster-default;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    z-index: -1;
+    margin-left: -15px;
+    opacity: 0.8;
+    background: $gray;
+    .tooltipster-content {
+        // background:$light-gray;
+        padding: 6px 12px 6px 14px;
+    }
+    .tooltipster-arrow-left {
+        span {
+            border-top: 14px solid transparent !important;
+            border-bottom: 14px solid transparent !important;
+            border-left: 16px solid;
+            top: 50%;
+            margin-top: -14px;
+            right: -16px;
+        }
+    }
+}
+
+#profile_score {
+    width: 70px !important;
+    height: 70px !important;
+}
+
+// I think the below is unused...?
+.profile_score {
+    position: relative;
+    .title {
+        font-size: 12px;
+    }
+    .percentage {
+        position: absolute;
+        width: 65px;
+        text-align: center;
+        top: 19px;
+        font-size: 24px;
+    }
+}
+
+section#candidate_edit {
+    .first_time_disabled {
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+        filter: blur(1px);
+        cursor: default !important;
+        opacity: 0.3;
+        border: 1px solid transparent !important;
+    }
+
+    margin-bottom: 45px;
+    .form-control[readonly] {
+        cursor: pointer !important;
+    }
+}
+
+section#candidate_edit, section#candidate_edit_header {
+    h2 {
+        margin: 20px 0;
+        small {
+            font-size: 16px;
+            font-weight: 300;
+            color: $light-gray;
+        }
+    }
+    .upload_image {
+        width: 500px;
+        height: 500px;
+    }
+    .user_skill_list, .user_other_qualification_list, .user_interest_list, .user_club_list {
+        input.string, .ms-ctn {
+            width: 100%;
+        }
+    }
+    .btn-sm {
+        padding: 0px 10px 4px 10px;
+        i {
+            font-size: 1.4em;
+            position: relative;
+            top: 3px;
+        }
+    }
+    ul.nav-tabs li {
+        padding-left: 0;
+    }
+    // .ms-helper {
+    //     display: none !important;
+    // }
+    .company_item_wrap {
+        display: inline;
+        img {
+            border-radius: 50%;
+            border: 3px solid $very_light_gray;
+            overflow: hidden;
+            width: 40px;
+            margin-right: 5px;
+        }
+    }
+    .checkbox-container {
+        @extend .col-md-offset-5;
+        @extend .col-md-19;
+        label {
+            @extend .col-md-10;
+        }
+        .icheckbox_flat-orange {
+            margin-left: -8px;
+            margin-right: 10px;
+        }
+    }
+    .horizontal-tabs {
+        .nav-tabs {
+            border-bottom: 4px solid #4c5053;
+            li {
+                border-radius: 5px 5px 0 0;
+                border-bottom: 1px solid $very_light_gray;
+                color: $light-gray;
+                a {
+                    opacity: 0.6;
+                    text-transform: uppercase;
+                    padding: 6px 0 2px 0;
+                    font-weight: 300;
+                    background: 0;
+                    border: 0;
+                    @media (max-width: $screen-xs-max) {
+                        line-height: 1.5em;
+                    }
+                }
+                a:hover {
+                    opacity: 1;
+                }
+            }
+            li.active {
+                // background:lighten($very_light_gray, 2%);
+                background: #4c5053;
+                border-bottom: 1px solid transparent;
+                a {
+                    opacity: 1;
+                    color: #fff;
+                    background: 0;
+                    border: 0;
+                }
+            }
+            @media (min-width: $screen-sm-min) {
+                margin: 30px 0 0 0;
+            }
+            @media (max-width: $screen-xs-max) {
+                padding-bottom: 0 !important;
+                li {
+                    float: left;
+                }
+            }
+        }
+    }
+    .well {
+        padding: 20px;
+        margin-bottom: 5px;
+        background: lighten($very_light_gray, 2%);
+        // border:1px solid lighten($light_gray, 8%);
+        border-radius: 0px;
+        .well {
+            background: darken($very_light_gray, 2%);
+            padding: 15px 5px 8px 15px;
+            input.string {
+                width: 100%;
+            }
+        }
+    }
+    .row {
+        > div {
+            padding: 0 !important;
+        }
+        .block {
+            text-align: center;
+            border: 1px solid $very_light_gray;
+            margin-left: -1px;
+            margin-top: -1px;
+            height: 280px;
+            overflow: hidden;
+            cursor: pointer;
+            display: block;
+            text-decoration: none;
+            color: $gray;
+            line-height: 14px;
+            padding: 0 8% 0 8%;
+            .icon-large {
+                font-size: 3em;
+            }
+            h4 {
+                margin-top: 0.3em;
+                font-size: 0.95em;
+            }
+            .wrap {
+                opacity: 0;
+            }
+        }
+        .block.active {
+            background: $brand-primary;
+            color: #fff;
+            * {
+                color: #fff;
+            }
+            h4, i {
+                opacity: 1;
+            }
+        }
+        .block.link-disabled {
+            pointer-events: none;
+            cursor: default;
+        }
+        .block.link-disabled:not(.open_block) {
+            opacity: 0.3;
+        }
+        #profile_pic {
+            width: 60%;
+        }
+        .loading {
+            img {
+                opacity: 0.3;
+            }
+        }
+        #wrap_profile {
+            h4 {
+                text-align: center;
+            }
+        }
+        // .input-daterange {
+        // 	input {
+        // 		width:35% !important;
+        // 	}
+        // }
+   
+    }
+    #profile_edit_form, #summary_edit_form, #work_edit_form, #education_edit_form, #skills_edit_form, #interests_edit_form, #achievements_edit_form, #documents_edit_form {
+        display: none;
+    }
+    // section#candidate_edit_header {
+    // 	margin-bottom:0 !important;
+    // }
+    #profile_edit_form {
+        .user_preferred_email {
+            label {
+                @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                    padding-top: 0;
+                }
+            }
+        }
+        .user_phone_number {
+            .intl-tel-input {
+                @media (max-width: $screen-sm-max) {
+                    width: 100%;
+                }
+            }
+            .intl-tel-input + .parsley-errors-list {
+                @media (min-width: $screen-md-min) {
+                    width: 211px;
+                }
+            }
+        }
+        .user_dob {
+            .bootstrap-select {
+                float: left;
+                width: 32%;
+                margin-right: 1%;
+                @media (min-width: $screen-sm-min) {
+                    max-width: 7em;
+                }
+            }
+            input, .parsley-errors-list {
+                width: 155px;
+            }
+        }
+        #languages {
+            .bootstrap-select {
+                margin-bottom: 15px;
+            }
+
+            .language-select > .bootstrap-select {
+              width: 100%;
+            }
+        }
+        .social-media-input {
+            > label, > * > label {
+                color: $light_gray;
+                font-weight: normal;
+                font-size: 14px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 12px;
+                margin-top: 1px;
+                margin-bottom: 0;
+                position: absolute;
+                z-index: 3;
+            }
+            #user_link_facebook {
+                padding-left: 9.9em;
+                @media (min-width: $screen-sm-min) {
+                    padding-left: 12.75em;
+                }
+            }
+            #user_link_web {
+                @media (min-width: $screen-sm-min) {
+                    padding-left: 3.7em;
+                }
+            }
+            #user_link_twitter {
+                padding-left: 1.6em;
+            }
+            #user_link_linkedin {
+                padding-left: 9.2em;
+                @media (min-width: $screen-sm-min) {
+                    padding-left: 12em;
+                }
+            }
+        }
+    }
+    #summary_edit_form {
+        .user_summary, .user_summary textarea {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-bottom:0;
+            border-bottom:0;
+        }
+        #summary_score {
+            width:100%;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+        .progress {
+            margin-bottom: 28px;
+        }
+    }
+    #profile_edit_form .nested-fields, #achievements_edit_form .nested-fields, #secondary_education .nested-fields {
+        .form-inputs {
+            a.remove_fields {
+                @extend .remove_fields_hidden;
+                opacity:0.5;
+                top: 3px;
+                right: 14px;
+            }
+            a.remove_fields:hover {
+                opacity:1;
+                text-decoration: none;
+            }
+        }
+    }
+    #tertiary_education .nested-fields {
+        .form-inputs {
+            a.remove_fields {
+                top: 3px;
+                right: 14px;
+                color: $red;
+
+                i {
+                    font-size: 1.4em;
+                    position: relative;
+                    top: 0.2em;
+                }
+            }
+            a.remove_fields:hover {
+                text-decoration: none;
+            }
+        }
+        .input-daterange {
+            margin-bottom: 28px;
+        }
+        .qualification-select .bootstrap-select {
+            width: 100%;
+        }
+    }
+    #work_edit_form .nested-fields {
+        .form-inputs {
+            a.remove_fields {
+                z-index: 101;
+                position: absolute;
+                color: $red;
+                bottom: 10px;
+                right: 10px;
+
+                @media (min-width: $screen-sm-min) {
+                    bottom: 25px;
+                    right: 40px;
+                }
+
+                i {
+                    font-size: 1.4em;
+                    position: relative;
+                    top: 0.2em;
+                }
+            }
+            a.remove_fields:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .currently_working_here {
+        >label {
+            display:inline-block;
+            margin:0 5px 0 0;
+            cursor:pointer;
+        }
+        .currently_working_here {
+            margin:9px 10px 0px 0px;    
+        }
+        ul {
+            display:none;
+        }
+    }
+    #documents_edit_form {
+        .file-upload-box {
+            background: lighten($very-light-gray, 5%);
+            margin-bottom: 28px;
+            padding: 10px;
+            border: 1px solid darken($very-light-gray, 5%);
+            margin:20px 0 30px 0;
+        }
+        .file-upload-box.file-uploaded {
+            background: lighten($brand-success, 41%);
+            border: 1px solid lighten($brand-success, 25%);
+            i.uploaded {
+                display:block !important;
+            }
+        }
+        h6 { font-size: 14px }
+        .upload-icon {
+            width:35px;
+            position:relative;
+            margin:15px auto 10px auto;
+            i {
+                font-size:2.5em;
+            }
+            i.icon-check-7 {
+                z-index:10;
+                color: $brand-success;
+                  position: absolute;
+                  left: -5px;
+                  font-size: 20px;
+                  top: -5px;
+                  display:none;
+            }
+            i:before {
+                z-index:10;
+            }
+            i.icon-check-7:after {
+                  content: "";
+                  background: #fff;
+                  width: 12px;
+                  height: 13px;
+                  display: block;
+                  position: absolute;
+                  top: 6px;
+                  left: 4px;
+                  z-index: -1;
+            }
+        }
+        .view {
+            margin:-20px 0 15px 0;
+            a {
+                font-size:10px;
+                color:$gray;
+            }
+            
+        }
+        
+        // .view {
+        //     margin-left:10px;
+        //     display:inline-block;
+        // }
+    }
+    // .form-group.nested {
+    // 	> div {
+    // 		margin-left: 0;
+    // 		padding-left:0;
+    // 		label {
+    // 			width:100%;
+    // 		}
+    // 		.bootstrap-select {
+    // 			width:100%;
+    // 		}
+    // 		.ms-ctn {
+    // 			width:100%;
+    // 		}
+    // 	}
+    // }
+    // .form-group {
+    // 	clear:both;
+    // 	label {
+    // 		// @extend .col-md-5;
+    // 		padding:7px 0 0 0;
+    // 	}
+    // 	> input, .ms-ctn {
+    // 		// @extend .col-md-19;
+    // 		margin-bottom:15px;
+    // 	}
+    // }
+    .form-group.date {
+        > label {
+            display: block;
+        }
+        .form-control.date {
+            // @extend .col-md-6;
+            width: 50%;
+            @media (min-width: $screen-sm-min) {
+                width: 32.5%;
+            }
+        }
+    }
+    .user_gender .bootstrap-select {
+        width: 100%;
+        // max-width: 8.5em;
+    }
+}
+
+section#candidate_edit.open_block_wrap {
+    .block.open_block {
+        @extend .active;
+    }
+}
+
+.block-complete-tick {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    color: $brand-success;
+    @media (max-width: $screen-xs-max) {
+        z-index: 0; // used to position the tick over its backdrop element on mobile
+        top: 5px;
+    }
+}
+
+.tick-backdrop {
+    background-color: white;
+    height: 17px;       // slightly smaller than the tick itself
+    width: 18px;        // slightly smaller than the tick itself
+    top: 6px;           // offset so it doesn't peek out behind the tick
+    left: 4px;          // offset so it doesn't peek out behind the tick
+    position: absolute; // so that it overlaps the tick instead of pushing it down
+    z-index: -1;        // puts it under the tick
+}
+
+.to-label {
+    padding-top: 0.7em;
+}
+
+#volunteering_experience {
+    .nested-fields {
+        .to-label {
+            padding-top: 0.7em;
+        }
+    }
+}
+
+#tertiary_education {
+    .from, .to {
+        // width:
+        // max-width: 11em;
+        // padding: 0 7.5px;
+   
+    }
+    .aggregate {
+        margin-bottom: 0;
+        .form-group {
+            margin-bottom: 0;
+            div {
+                width: 100%;
+            }
+        }
+    }
+    #qualification_area_name {
+        .string {
+            margin-bottom: 0;
+            .col-sm-19 {
+                width: 100%;
+            }
+        }
+    }
+
+    .major_field {
+        .string {
+            .col-sm-19 {
+                width: 100%;
+            }
+        }
+    }
+    .of-label {
+        text-transform: none;
+    }
+    @media (max-width: $screen-xs-max) {
+        .of-label, .from-label, .to-label, .aggregate-label {
+            padding-top: 0.7em !important;
+        }
+        .from, .to {
+            margin-bottom: 15px;
+        }
+        .bottom-form {
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: $screen-sm-max) {
+        .to-label, .aggregate-label {
+            padding-top: 0;
+        }
+    }
+}
+
+#language-label {
+    @media (min-width: $screen-sm-min) {
+        padding-top: 1.8em;
+    }
+}
+
+#secondary_education {
+    div {
+        div.form-group.nested.school_subjects {
+            @media (max-width: $screen-xs-max) {
+                padding: 0 0.5em;
+            }
+            .bootstrap-select {
+                margin-top: 2px;
+                @media (min-width: $screen-sm-min) {
+                    min-height: 48px;
+                }
+            }
+            .form-inputs {
+                @media (max-width: $screen-xs-max) {
+                    padding: 0.7em 0;
+                }
+            }
+        }
+    }
+    .subject-symbol .bootstrap-select {
+        width: 100%;
+    }
+}
+
+#achievements_edit_form {
+    .achievement-label {
+        padding-top: 0.7em;
+        @media (min-width: $screen-sm-min) {
+            text-align: right;
+        }
+    }
+    .form-group.date {
+        .form-control.date {
+            float: left;
+            padding-right: 0.5em;
+            @media (min-width: $screen-sm-min) {
+                width: 10em !important;
+                //hacky, but #yolo  <-haha!
+            }
+        }
+    }
+    .user_user_achievements_date {
+        width: 11em;
+    }
+    // .achivement-date {
+    // 	float: left;
+    // 	padding-right: 1em;
+    // }
+}
+
+// #wrap_profile_edit a {
+// 	border-radius:15px 0 0 0;
+// }
+// #wrap_skills_edit a {
+// 	border-radius:0 15px 0 0;
+// }
+// #wrap_interests_edit a {
+// 	border-radius:0 0 0 15px;
+// }
+// #wrap_summary_edit a {
+// 	border-radius:0 0 15px 0;
+// }
+
+@media (max-width: $screen-sm-max) {
+    body section#candidate_edit .well {
+        padding: 15px 10px;
+        // .to {
+        // margin: 0 5px;
+        // }
+        // input.string {
+        // width: 45% !important;
+        // background:#fff !important;
+        // }
+   
+    }
+
+    .tooltip-xs {
+        padding-top: 28px;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    body section#candidate_edit .row {
+        .block {
+            line-height: 14px;
+            padding: 0 8% 0 8%;
+            .icon-large {
+                font-size: 4em;
+            }
+            h4 {
+                margin-top: 0.3em;
+                font-size: 0.95em;
+            }
+        }
+    }
+    #secondary_education {
+        div {
+            div.form-group.nested.school_subjects {
+                margin-left: 0;
+                margin-right: 0;
+                @media (max-width: $screen-xs-max) {
+                    padding: 0 0.5em;
+                }
+                label {
+                    padding-top: 1.8em;
+                }
+            }
+        }
+    }
+    .qualification-dates-fill {
+        padding-bottom: 38px;
+    }
+}
+
+.button-align {
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+        text-align: right;
+    }
+}
+
+#work_edit_form {
+    .nested-fields {
+        position: relative !important;
+
+        .verified_experience_overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            opacity: 0.5;
+            background-color: $very-light-gray;
+        }
+        .label-wrap {
+            position: absolute;
+            padding: 8px 0;
+            z-index: 101;
+            top: 42px;
+            right: 13px;
+
+            @media (min-width: $screen-sm-min) {
+                right: 42px;
+            }
+
+            .label {
+                font-size: 0.85em;
+                border-radius: 20px;
+                padding: 6px 10px;
+                i {
+                    vertical-align: bottom;
+                    font-size: 13px;
+                    margin: 0 3px 0 0;
+                    display: inline-block;
+                }
+            }
+            .label-default {
+                opacity:0.4;
+            }
+        }
+        .responsibilities {
+            a.remove_fields {
+                top: 3px;
+            }
+            .inline-tooltip {
+                margin-top: 0;
+            }
+            .links.button-height {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+    body section#candidate_edit {
+        .well {
+            padding: 40px;
+        }
+        .form-group.date {
+            > label {
+                display: inline-block;
+            }
+            .form-control.date {
+                // @extend .col-md-6;
+                // width:33%;
+           
+            }
+            // // TEST
+            // .input-daterange {
+            // 	margin-left: 0;
+            // }
+       
+        }
+        .row {
+            .block {
+                line-height: 14px;
+                padding: 0 8% 0 8%;
+                .icon-large {
+                    font-size: 5.5em;
+                }
+                h4 {
+                    margin-top: 0.9em;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
